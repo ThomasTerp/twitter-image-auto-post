@@ -39,8 +39,8 @@ schedule.scheduleJob(process.env.TWITTER_SCHEDULE, () =>
 	const imageFileName = getFirstPNGFileInDirectory(inputDirectory);
 	const imageFilePath = inputDirectory + imageFileName;
 	const imageData = fs.readFileSync(imageFilePath);
-	console.log("tes")
-	/*client.post(
+	
+	client.post(
 		"media/upload",
 		{
 			media: imageData
@@ -71,7 +71,7 @@ schedule.scheduleJob(process.env.TWITTER_SCHEDULE, () =>
 				}
 			);
 		}
-	);*/
+	);
 });
 
 console.log(`Started schedule "${process.env.TWITTER_SCHEDULE}" to tweet image`)
