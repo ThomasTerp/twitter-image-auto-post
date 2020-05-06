@@ -1,0 +1,18 @@
+{
+	"name": "twitter-image-auto-post",
+	"version": "1.0.0",
+	"description": "Periodically tweet images from the input directory.",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"twitter",
+		"tweet",
+		"post",
+		"auto",
+		"bot"
+	],
+	"author": "ThomasTerp",
+	"license": "MIT"
+}
