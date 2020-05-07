@@ -21,7 +21,7 @@ function getFirstPNGFileInDirectory(directory)
 {
 	const files = fs.readdirSync(directory);
 	files.sort();
-
+	
 	for(let fileIndex in files)
 	{
 		const file = files[fileIndex];
@@ -35,9 +35,7 @@ function getFirstPNGFileInDirectory(directory)
 
 schedule.scheduleJob(process.env.TWITTER_SCHEDULE, () =>
 {
-	console.log("tick")
-	
-	/*const inputDirectory = __dirname + "\\input\\";
+	const inputDirectory = __dirname + "\\input\\";
 	const imageFileName = getFirstPNGFileInDirectory(inputDirectory);
 	const imageFilePath = inputDirectory + imageFileName;
 	const imageData = fs.readFileSync(imageFilePath);
@@ -73,7 +71,7 @@ schedule.scheduleJob(process.env.TWITTER_SCHEDULE, () =>
 				}
 			);
 		}
-	);*/
+	);
 });
 
 console.log(`Started schedule with cron "${process.env.TWITTER_SCHEDULE}" to tweet image`);
