@@ -1,7 +1,7 @@
 console.log("Starting Twitter Image Auto Post...");
 
 //Modules
-require("dotenv").config()
+require("dotenv").config();
 const Twitter = require("twitter");
 const schedule = require("node-schedule");
 const fs = require("fs");
